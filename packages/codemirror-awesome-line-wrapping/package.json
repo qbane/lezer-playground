@@ -9,8 +9,6 @@
   "author": "",
   "license": "ISC",
   "peerDependencies": {
-    "@codemirror/state": "^6.1.1",
-    "@codemirror/view": "^6.2.0",
     "react": "^18.2.0"
   },
   "dependencies": {

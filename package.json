@@ -18,5 +18,19 @@
     "patchedDependencies": {
       "recast": "patches/recast.patch"
     }
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.18.0",
+    "@codemirror/commands": "^6.6.1",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/lang-lezer": "^6.0.1",
+    "@codemirror/language": "^6.10.2",
+    "@codemirror/search": "^6.5.6",
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/view": "^6.33.0",
+    "@lezer/common": "^1.2.1",
+    "@lezer/generator": "^1.7.1",
+    "@lezer/highlight": "^1.2.1",
+    "@lezer/lr": "^1.4.2"
   }
 }
