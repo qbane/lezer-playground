@@ -1,13 +1,6 @@
 {
-  "name": "statebasednotebook",
+  "name": "lezer-playground-monorepo",
   "private": true,
-  "packageManager": "yarn@3.3.0",
-  "workspaces": [
-    "lezer-playground",
-    "lezer-playground/packages/*",
-    "packages/*",
-    "codemirror-editor-in-chief"
-  ],
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

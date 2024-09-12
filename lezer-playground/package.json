@@ -18,7 +18,7 @@
     "@dral/dralbook-transform-javascript": "workspace:^",
     "@dral/find-positions-zig": "workspace:*",
     "@dral/lezer-generator-worker": "workspace:^",
-    "@dral/lezer-inspector": "*",
+    "@dral/lezer-inspector": "workspace:*",
     "@dral/lezer-lezer-error": "workspace:*",
     "@dral/modern-map": "workspace:^",
     "@lezer/common": "^1.0.2",
