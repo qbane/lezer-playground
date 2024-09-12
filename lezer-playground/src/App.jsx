@@ -18,7 +18,7 @@ import {
   DEFAULT_TO_PARSE,
 } from "./default-field-codes.js";
 import "./App.css";
-import { useCodemirrorKeyhandler } from "../../simple-notebooks/web-app/src/use/use-codemirror-keyhandler";
+import { useCodemirrorKeyhandler } from "./use/use-codemirror-keyhandler";
 import { JavascriptStuffEditor } from "./editors/javascript-editor/javascript-editor";
 import { LezerEditor } from "./editors/lezer-editor/lezer-editor";
 
