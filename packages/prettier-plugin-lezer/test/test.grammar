@@ -1,3 +1,0 @@
-PatternArgList {
-  "(" commaSep<pattern | KeywordPattern { VariableName "=" pattern }> ")"
-}

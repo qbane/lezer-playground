@@ -3,15 +3,9 @@
   "private": true,
   "packageManager": "yarn@3.3.0",
   "workspaces": [
-    "simple-notebooks/web-app",
-    "simple-notebooks/node-engine",
-    "simple-notebooks/p5",
-    "simple-notebooks/packages/*",
     "lezer-playground",
     "lezer-playground/packages/*",
     "packages/*",
-    "paintbrush/extension",
-    "paintbrush/paintbrush-in-page-editor",
     "codemirror-editor-in-chief"
   ],
   "version": "1.0.0",
