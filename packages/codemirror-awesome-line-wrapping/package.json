@@ -10,8 +10,5 @@
   "license": "ISC",
   "peerDependencies": {
     "react": "^18.2.0"
-  },
-  "dependencies": {
-    "lodash-es": "^4.17.21"
   }
 }

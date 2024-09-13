@@ -49,13 +49,22 @@ importers:
       '@lezer/lr':
         specifier: ^1.4.2
         version: 1.4.2
+      lodash-es:
+        specifier: ^4.17.21
+        version: 4.17.21
     devDependencies:
+      '@types/lodash-es':
+        specifier: ^4.17.12
+        version: 4.17.12
+      '@types/react':
+        specifier: ^18.2.6
+        version: 18.2.6
       turbo:
         specifier: ^1.9.6
         version: 1.9.6
       typescript:
-        specifier: ^5.0.4
-        version: 5.0.4
+        specifier: ^5.6.2
+        version: 5.6.2
 
   lezer-playground:
     dependencies:
@@ -107,9 +116,6 @@ importers:
       immer:
         specifier: ^10.0.2
         version: 10.0.2
-      lodash-es:
-        specifier: ^4.17.21
-        version: 4.17.21
       process:
         specifier: ^0.11.10
         version: 0.11.10
@@ -174,9 +180,6 @@ importers:
 
   packages/codemirror-awesome-line-wrapping:
     dependencies:
-      lodash-es:
-        specifier: ^4.17.21
-        version: 4.17.21
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -195,13 +198,6 @@ importers:
       immer:
         specifier: ^10.0.2
         version: 10.0.2
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
-    devDependencies:
-      typescript:
-        specifier: ^5.0.4
-        version: 5.0.4
 
   packages/codemirror-subtle-color-picker:
     dependencies:
@@ -220,28 +216,17 @@ importers:
 
   packages/codemirror-x-react:
     dependencies:
-      lodash-es:
-        specifier: ^4.17.21
-        version: 4.17.21
       react:
         specifier: ^18.2.0
         version: 18.2.0
 
-  packages/composite-key:
-    devDependencies:
-      typescript:
-        specifier: ^5.0.4
-        version: 5.0.4
+  packages/composite-key: {}
 
   packages/dral-codemirror-helpers:
     dependencies:
       dral-lezer-helpers:
         specifier: workspace:^
         version: link:../dral-lezer-helpers
-    devDependencies:
-      typescript:
-        specifier: ^5.0.4
-        version: 5.0.4
 
   packages/dral-lezer-helpers: {}
 
@@ -281,11 +266,7 @@ importers:
         specifier: ^2.52.2
         version: 2.79.1
 
-  packages/modern-map:
-    devDependencies:
-      typescript:
-        specifier: ^5.0.4
-        version: 5.0.4
+  packages/modern-map: {}
 
   packages/react-codemirror-widget:
     dependencies:
@@ -334,9 +315,6 @@ importers:
       buffer:
         specifier: ^6.0.3
         version: 6.0.3
-      lodash-es:
-        specifier: ^4.17.21
-        version: 4.17.21
       os: {specifier: ^0.1.2, version: 0.1.2}
       path:
         specifier: ^0.12.7
@@ -872,6 +850,12 @@ packages:
 
   '@types/hoist-non-react-statics@3.3.1':
     resolution: {integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==}
+
+  '@types/lodash-es@4.17.12':
+    resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
+
+  '@types/lodash@4.17.7':
+    resolution: {integrity: sha512-8wTvZawATi/lsmNu10/j2hk1KEP0IvjubqPE3cu1Xz7xfXXt5oCq3SNUz4fMIP4XGF9Ky+Ue2tBA3hcS7LSBlA==}
 
   '@types/node@20.1.7':
     resolution: {integrity: sha512-WCuw/o4GSwDGMoonES8rcvwsig77dGCMbZDrZr2x4ZZiNW4P/gcoZXe/0twgtobcTkmg9TuKflxYL/DuwDyJzg==}
@@ -1807,9 +1791,9 @@ packages:
     resolution: {integrity: sha512-mLbCIAYNbSm60kVhBiAr+YA1BYpPObS/y7rqw1hjh36ZdJDp35lUSeqdBs6oGt0Y4hnmN4ZeIXu8zMVRR03/vw==}
     hasBin: true
 
-  typescript@5.0.4:
-    resolution: {integrity: sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==}
-    engines: {node: '>=12.20'}
+  typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
+    engines: {node: '>=14.17'}
     hasBin: true
 
   update-browserslist-db@1.0.10:
@@ -2447,6 +2431,12 @@ snapshots:
     dependencies:
       '@types/react': 18.2.6
       hoist-non-react-statics: 3.3.2
+
+  '@types/lodash-es@4.17.12':
+    dependencies:
+      '@types/lodash': 4.17.7
+
+  '@types/lodash@4.17.7': {}
 
   '@types/node@20.1.7': {}
 
@@ -3358,7 +3348,7 @@ snapshots:
       turbo-windows-64: 1.9.6
       turbo-windows-arm64: 1.9.6
 
-  typescript@5.0.4: {}
+  typescript@5.6.2: {}
 
   update-browserslist-db@1.0.10(browserslist@4.21.5):
     dependencies:

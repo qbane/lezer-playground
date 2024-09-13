@@ -4,6 +4,9 @@
     "target": "ES2022",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "checkJs": true,
+    "maxNodeModuleJsDepth": 8,
     "noEmit": true,
     "jsx": "react"
   }

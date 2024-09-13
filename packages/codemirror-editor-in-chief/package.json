@@ -10,14 +10,10 @@
   "type": "module",
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.0.4"
-  },
   "dependencies": {
     "@dral/modern-map": "workspace:^",
     "codemirror-x-react": "workspace:^",
     "composite-key": "workspace:^",
-    "immer": "^10.0.2",
-    "lodash": "^4.17.21"
+    "immer": "^10.0.2"
   }
 }

@@ -19,7 +19,6 @@
     "composite-key": "workspace:^",
     "dral-lezer-helpers": "workspace:^",
     "immer": "^10.0.2",
-    "lodash-es": "^4.17.21",
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-codemirror-widget": "workspace:^",
