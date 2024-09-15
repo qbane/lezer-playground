@@ -83,6 +83,7 @@ let base_extensions = [
       "caret-color": "white",
     },
   }),
+  EditorView.darkTheme.of(true),
 
   scrollPastEnd(),
 ];
@@ -90,11 +91,11 @@ let base_extensions = [
 let color_theme = EditorView.theme({
   "& .cm-selectionBackground": {
     opacity: "1 !important", // Fuuuu
-    background: "rgb(41 51 33 / 56%) !important",
+  //   background: "rgb(41 51 33 / 56%) !important",
   },
-  "&.cm-focused .cm-selectionBackground": {
-    background: "rgb(34 82 2 / 56%) !important",
-  },
+  // "&.cm-focused .cm-selectionBackground": {
+  //   background: "rgb(34 82 2 / 56%) !important",
+  // },
 });
 
 let inspector_lang = new LanguageSupport(

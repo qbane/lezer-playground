@@ -588,12 +588,12 @@ let scope_style = EditorView.theme({
 
 let theme = EditorView.theme(
   {
-    "& .cm-selectionBackground": {
-      background: "rgb(74 0 88 / 56%) !important",
-    },
-    "&.cm-focused .cm-selectionBackground": {
-      background: "rgb(130 0 153 / 56%) !important",
-    },
+    // "& .cm-selectionBackground": {
+    //   background: "rgb(74 0 88 / 56%) !important",
+    // },
+    // "&.cm-focused .cm-selectionBackground": {
+    //   background: "rgb(130 0 153 / 56%) !important",
+    // },
     "&.cm-editor .cm-selectionMatch": {
       "text-shadow": "0 0 13px rgb(255 7 7)",
     },

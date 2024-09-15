@@ -45,12 +45,12 @@ let STUFF_FROM_PLUTO_I_GUESS = EditorView.baseTheme({
   ".cm-tooltip.cm-tooltip-autocomplete > ul > li": {
     height: "unset",
   },
-  ".cm-selectionBackground": {
-    background: "var(--cm-selection-background-blurred)",
-  },
-  "&.cm-focused .cm-selectionBackground": {
-    background: "var(--cm-selection-background)",
-  },
+  // ".cm-selectionBackground": {
+  //   background: "var(--cm-selection-background-blurred)",
+  // },
+  // "&.cm-focused .cm-selectionBackground": {
+  //   background: "var(--cm-selection-background)",
+  // },
   ".cm-editor": {
     color: "var(--cm-editor-text-color)",
   },
@@ -76,6 +76,7 @@ export let base_extensions = [
   base_theme,
 
   EditorView.scrollMargins.of(() => ({ top: 32, bottom: 32 })),
+  EditorView.darkTheme.of(true),
   dot_gutter,
   EditorState.tabSize.of(2),
   placeholder("The rest is still unwritten..."),

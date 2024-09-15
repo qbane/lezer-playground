@@ -50,12 +50,12 @@ let javascript_specific_extension = [
 
 let theme = EditorView.theme(
   {
-    "& .cm-selectionBackground": {
-      background: "rgb(80 40 80 / 56%) !important",
-    },
-    "&.cm-focused .cm-selectionBackground": {
-      background: "hsl(0deg 61.98% 33.32% / 48%) !important",
-    },
+    // "& .cm-selectionBackground": {
+    //   background: "rgb(80 40 80 / 56%) !important",
+    // },
+    // "&.cm-focused .cm-selectionBackground": {
+    //   background: "hsl(0deg 61.98% 33.32% / 48%) !important",
+    // },
     // "&.cm-editor .cm-selectionMatch": {
     //   "text-shadow": "0 0 13px rgb(255 7 7)",
     // },
