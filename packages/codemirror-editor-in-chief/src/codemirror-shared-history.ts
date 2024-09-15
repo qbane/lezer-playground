@@ -31,7 +31,7 @@ import {
   EditorRemoveEffect,
   EditorHasSelectionField,
 } from "./editor-in-chief";
-import { compact } from "lodash";
+import { compact } from "lodash-es";
 import { EditorInChiefSelection, CellStateEffect } from "./wrap-cell-types";
 import { EditorInChiefCommand, EditorInChiefKeyBinding } from "./wrap/keymap";
 import {
