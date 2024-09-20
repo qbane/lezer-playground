@@ -137,12 +137,11 @@ let line_wrapping_decorations = StateField.define({
 let base_theme = EditorView.baseTheme({
   ".awesome-wrapping-plugin-the-line": {
     "--correction": 0,
-    "margin-left": "calc(var(--indented))",
-    "text-indent": "calc(-1 * var(--indented))",
+    "borderLeft": "calc(var(--indented)) solid transparent",
   },
-  ".awesome-wrapping-plugin-the-line > *": {
-    /* text-indent apparently cascades... which I think is pretty stupid but this is the fix */
-    "text-indent": "initial",
+  ".awesome-wrapping-plugin-the-line:before": {
+    content: "''",
+    marginLeft: "calc(-1 * var(--indented))",
   },
   ".awesome-wrapping-plugin-the-tabs": {
     /* So FOR SOME REASON text-ident is kinda buggy
