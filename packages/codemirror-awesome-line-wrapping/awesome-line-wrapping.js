@@ -1,4 +1,6 @@
 /**
+ * NOTE (qbane): the description no longer applies as we moved away from the text-indent hacks :(
+ *
  * Plugin that makes line wrapping in the editor respect the identation of the line.
  * It does this by adding a line decoration that adds padding-left (as much as there is indentation),
  * and adds the same amount as negative "text-indent". The nice thing about text-indent is that it
@@ -137,21 +139,16 @@ let line_wrapping_decorations = StateField.define({
 let base_theme = EditorView.baseTheme({
   ".awesome-wrapping-plugin-the-line": {
     "--correction": 0,
-    "borderLeft": "calc(var(--indented)) solid transparent",
+    borderLeft: "calc(var(--indented)) solid transparent",
   },
   ".awesome-wrapping-plugin-the-line:before": {
     content: "''",
     marginLeft: "calc(-1 * var(--indented))",
   },
   ".awesome-wrapping-plugin-the-tabs": {
-    /* So FOR SOME REASON text-ident is kinda buggy
-        but that gets fixed with inline-block...  
-        But that brought some other problems...
-        But margin-left: -1px seems to also do the trick?? */
     /* display: inline-block; */
     whiteSpace: "pre",
     verticalAlign: "top",
-    marginLeft: "-1px",
   },
 });
 
