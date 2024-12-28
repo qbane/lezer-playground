@@ -140,7 +140,11 @@ let ProjectsDropdown = () => {
 
 let path_prefix = "./premade-projects/";
 // @ts-expect-error - Vite glob 😎
-const modules = import.meta.glob("./premade-projects/**/*", { as: "raw" });
+const modules = import.meta.glob("./premade-projects/**/*", {
+  query: "?raw",
+  import: "default",
+});
+
 let premade_projects = {};
 for (let [path, import_module] of Object.entries(modules)) {
   let [project, filename] = path.slice(path_prefix.length).split("/");
